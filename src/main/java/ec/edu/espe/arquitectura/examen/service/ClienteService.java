@@ -23,7 +23,7 @@ public class ClienteService {
 
     public List<Cliente> listByTipoIdentificacionAndPattern(String tipoIdentificacion, String patron){ /*--patron es patron de busqueda */
         if("RUC".equals(tipoIdentificacion)){
-           return this.clienteRepository.findByApellidoOrderByApellido(patron);
+           return this.clienteRepository.findByApellidoLikeOrderByApellido(patron);
 
         }else{
             return this.clienteRepository.findByRazonSocialLikeOrderByRazonSocial(patron);
