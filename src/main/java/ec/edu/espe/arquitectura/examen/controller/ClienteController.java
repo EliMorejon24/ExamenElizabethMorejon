@@ -37,8 +37,8 @@ public class ClienteController {
     @GetMapping("/{tipoIdentificacion}/{nombre}")
     public ResponseEntity<List<Cliente>> obtainByTipoIdentificacionAndName(
         @PathVariable(name = "tipoIdentificacion") String tipoIdentificacion,
-        @PathVariable(name = "name") String name){
-        List<Cliente> clientes = this.clienteService.listByTipoIdentificacionAndPattern(tipoIdentificacion, name);
+        @PathVariable(name = "nombre") String nombre){
+        List<Cliente> clientes = this.clienteService.listByTipoIdentificacionAndPattern(tipoIdentificacion, nombre);
         return ResponseEntity.ok(clientes);
         
     }
