@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import ec.edu.espe.arquitectura.examen.model.OfiSede;
 
-public interface OfiSedeRepository extends JpaRepository<OfiSede, Boolean>{
+public interface OfiSedeRepository extends JpaRepository<OfiSede, String>{
 
     List<OfiSede> findByEsPrincipalLikeOrderByEsPrincipal (Boolean esPrincipal);
     

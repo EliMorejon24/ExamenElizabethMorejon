@@ -17,7 +17,7 @@ import jakarta.persistence.Version;
 public class OfiSede {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "COD_sEDE", nullable = false)
+    @Column(name = "COD_SEDE", nullable = false)
     private String codigo;
     @Column(name = "COD_INSTITUCION", nullable = false)
     private Integer codigoInstitucion;
